@@ -54,8 +54,58 @@
                     <button class="recipe-button" data-recipe="hilachas"><i class="fas fa-book-open"></i> Ver Receta</button>
                 </div>
             </article>
+            <article class="recipe-card" data-category="plato-fuerte">
+                <div class="recipe-image">
+                    <img src="img/tamales.png" alt="Tamal Colorado">
+                </div>
+                <div class="recipe-content">
+                    <h2>Tamales Colorados</h2>
+                    <p class="recipe-description">Masa de maíz con recado rojo y carne, envueltos en hoja de plátano. Tradicionales en festividades.</p>
+                    <button class="recipe-button" data-recipe="tamales"><i class="fas fa-book-open"></i> Ver Receta</button>
+                </div>
+            </article>
+            
+            <article class="recipe-card" data-category="postre">
+                <div class="recipe-image">
+                    <img src="img/platamole.png" alt="Mole de Plátano">
+                </div>
+                <div class="recipe-content">
+                    <h2>Mole de Plátano</h2>
+                    <p class="recipe-description">Plátanos fritos bañados en una salsa espesa de chocolate y especias. Se decora con ajonjolí.</p>
+                    <button class="recipe-button" data-recipe="mole"><i class="fas fa-book-open"></i> Ver Receta</button>
+                </div>
+            </article>
+
+            <article class="recipe-card" data-category="sopa">
+                <div class="recipe-image">
+                    <img src="img/caldodegallina.png" alt="Caldo de Gallina">
+                </div>
+                <div class="recipe-content">
+                    <h2>Caldo de Gallina</h2>
+                    <p class="recipe-description">Caldo nutritivo de gallina criolla con verduras. Tradicionalmente se sirve con hierbabuena y limón.</p>
+                    <button class="recipe-button" data-recipe="caldo"><i class="fas fa-book-open"></i> Ver Receta</button>
+                </div>
+            </article>
+
         </div>
+
     </main>
+    <footer>
+        <p>© 2025 - Recetas de Guatemala. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para mostrar recetas -->
+    <div id="recipeModal" class="recipe-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Receta</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido de la receta se cargará aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
